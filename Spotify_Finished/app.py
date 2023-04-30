@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, session,redirect, url_for
 
 app = Flask(__name__)
-app.secret_key = 'zrookie'
+app.secret_key = 'XXXXXXX' #Change according to needs
 
 @app.route('/')
 def index():
@@ -133,8 +133,8 @@ import pickle
 
 #Verifying the user in spotify
 def spotify_verification():
-    cid ='d8762235995b4ddcbc0df90739df9a63' # Client ID; copy this from your app created on beta.developer.spotify.com
-    secret = '887a4eccdbde4195bfc0f7f4c472fe70' # Client Secret; copy this from your app
+    cid ='XXXXXXXXXXXXXXXXXXXXXXXXXX' # Client ID; copy this from your app created on beta.developer.spotify.com
+    secret = 'XXXXXXXXXXXXXXXXXXXXXXXXXX' # Client Secret; copy this from your app
     username = session['username'] # Your Spotify username
 
     #for avaliable scopes see https://developer.spotify.com/web-api/using-scopes/
