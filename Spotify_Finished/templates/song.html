@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recommended Songs</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>Recommended Songs</h1>
+    <table>
+      {% for index, row in songs.iterrows() %}
+        <tr>
+            <td></td>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/{{ row['iD'] }}?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </td> <!-- add the Spotify embed iframe tag in the new column -->
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

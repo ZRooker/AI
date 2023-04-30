@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+      }
+      h1 {
+        font-size: 48px;
+        margin-bottom: 50px;
+        text-align: center;
+        color: white;
+      }
+      .button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        margin: 10px;
+        padding: 20px;
+        font-size: 24px;
+        border-radius: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 200px; /* set a fixed width for the buttons */
+        text-align: center; /* center the text within the button */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pick Your Recommendation Type:</h1>
+    <div class="button-container">
+      <button onclick="window.location.href='/song_search'">Song</button>
+      <button onclick="window.location.href='/playlist_search'">Playlist</button>
+      <button onclick="window.location.href='/user'">User Data</button>
+    </div>
+  </body>
+</html>

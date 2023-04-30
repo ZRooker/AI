@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Spotify Profile</title>
+    <script src="static/script.js" type="module"></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+      h1 {
+        font-size: 48px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #888888;
+      }
+      h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      label {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 30px;
+        text-align: center;
+      }
+      li {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      a {
+        font-size: 24px;
+        color: #4CAF50;
+        text-decoration: none;
+      }
+      input[type="submit"] {
+        margin-top: 30px;
+        padding: 10px 20px;
+        font-size: 24px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display Your Spotify Profile Data</h1>
+    <section id="profile">
+      <h2>Logged in as <span id="displayName"></span></h2>
+      <span id="avatar"></span>
+      <form action="/username" method="POST">
+        <label for="username">Enter Your User ID:</label>
+        <input type="text" id="username" name="username">
+        <ul>
+          <li><label for="id">User ID: <span id="id"></span></label></li>
+          <li>Email: <span id="email"></span></li>
+          <li>Spotify URI: <a id="uri" href="#"></a></li>
+          <li>Link: <a id="url" href="#"></a></li>
+          <li>Profile Image: <span id="imgUrl"></span></li>
+        </ul>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Spotify Profile</title>
+        <script src="static/script.js" type="module"></script>
+    </head>
+    <body>
+        <h1>Display your Spotify profile data</h1>
+        <section id="profile">
+            <h2>Logged in as <span id="displayName"></span></h2>
+            <span id="avatar"></span>
+            <form action="/username" method="POST">
+                <label for="username">Enter your User ID:</label>
+                <input type="text" id="username" name="username">
+                <ul>
+                    <li><label for="id">User ID: <span id="id"></span></li>
+                    <li>Email: <span id="email"></span></li>
+                    <li>Spotify URI: <a id="uri" href="#"></a></li>
+                    <li>Link: <a id="url" href="#"></a></li>
+                    <li>Profile Image: <span id="imgUrl"></span></li>
+                </ul>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </body>
+</html> -->

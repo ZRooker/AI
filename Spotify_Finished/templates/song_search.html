@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Song Search</title>
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		h1 {
+			font-size: 2em;
+			text-align: center;
+			margin-bottom: 1em;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Search for a Song</h1>
+	<form action="/search_song" method="POST">
+		<label for="songname">Song Name:</label>
+		<input type="text" id="songname" name="songname">
+		<br><br>
+		<input type="submit" value="Search">
+	</form>
+</body>
+</html>
